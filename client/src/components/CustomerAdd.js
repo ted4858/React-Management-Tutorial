@@ -107,7 +107,7 @@ class CustomerAdd extends React.Component {
                         <input className={classes.hidden} accept="image/*" id="raised-button-file" type="file" name="file" file={this.state.file} value={this.state.fileName} onChange={this.handleFileChange}/><br/>
                         <label htmlFor="raised-button-file">
                             <Button variant="contained" color="primary" component="span" name="file">
-                                {this.state.fileName == "" ? "프로필 이미지 선택" : this.state.fileName}
+                                {this.state.fileName === "" ? "프로필 이미지 선택" : this.state.fileName}
                             </Button>
                         </label>
                         <br/>
